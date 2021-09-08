@@ -10,9 +10,17 @@ ctx.strokeStyle = "blue:";
 ctx.lineWidth = 3;
 line(100, 200, 300, 100);
 
-ctx.strokeStyle = "red";
-line(500, 50, 300, 450);
-line(0, 0, 100, 100);
+// draw a rectangle
+ctx.fillStyle = "orange";
+rect(100, 100, 200, 50, "fill");
+rect(400, 500, 70, 100, "stroke");
+function rect(x, y, w, h, mode) {
+ if (mode === "fill"){
+ctx.fillRect(x, y, w, h);
+ } else if(mode === "stroke"){
+     ctx.strokeRect(x, y, w,h);
+ }
+}
 
 //draw a line segment from (x1, y1) to (x2, y2)
 function line(x1, y1, x2, y2) {
