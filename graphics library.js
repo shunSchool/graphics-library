@@ -15,3 +15,14 @@ function rect(x, y, w, h, mode) {
        ctx.lineTo(x2, y2); //endpoint 2
        ctx.stroke();    
    }
+
+//draw a circle with center (x, y) and radios of r
+   function circle(x, y, r, mode) {
+ctx.beginPath();
+ctx.arc(x, y, r, 0, 2 * Math.PI);
+if (mode === "fill") {
+    ctx.fill();
+} else if (mode === "stroke:") {
+  ctx.stroke();
+    }
+}
