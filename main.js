@@ -19,3 +19,7 @@ rect(400, 500, 70, 100, "stroke");
 circle(400, 300, 50, "stroke");
 ctx.fillStyle = "green";
 circle(700, 300, 25, "fill");
+
+//draw a triangle
+triangle(0, 400, 300, 400, 250, 450, "fill");
+triangle(0, 300, 400, 300, 350, 250, "stroke");

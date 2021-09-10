@@ -26,3 +26,18 @@ if (mode === "fill") {
   ctx.stroke();
     }
 }
+
+//draw da triangle
+function triangle(x1, y1, x2, y2, x3, y3) {
+    console.log(x1, y1, x2, y2);
+    ctx.beginPath();
+    ctx.moveTo(x1, y1); //vertex 1
+    ctx.lineTo(x2, y2); //vertex 2
+    ctx.lineTo(x3, y3); //vertex 3
+    if (mode === "fill") {
+        ctx.fill();
+    } else if (mode === "stroke") {
+        ctx.closePath();
+        ctx.stroke();
+    }
+}
