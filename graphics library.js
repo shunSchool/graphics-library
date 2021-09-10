@@ -1,3 +1,14 @@
+function stroke(style) {
+    ctx.strokeStyle = style;
+}
+
+function lineWidth(width) {
+    ctx.lineWidth = width;
+}
+function fill(style) {
+    ctx.fillStyle = style;
+}
+
 //draw a stroke or fill rectangle with a top left vorner of x, y a width of w and a height of h
 function rect(x, y, w, h, mode) {
     if (mode === "fill"){
