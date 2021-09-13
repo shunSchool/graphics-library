@@ -8,7 +8,9 @@ function lineWidth(width) {
 function fill(style) {
     ctx.fillStyle = style;
 }
-
+function fill2(style) {
+    ctx.fillStyle = style;
+}
 //draw a stroke or fill rectangle with a top left vorner of x, y a width of w and a height of h
 function rect(x, y, w, h, mode) {
     if (mode === "fill"){
