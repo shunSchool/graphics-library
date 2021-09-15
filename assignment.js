@@ -17,10 +17,11 @@ function drawmogus (x, y,) {
     rect(x + 0, y + 80, 14, 14, "fill"); //left leg
     rect(x + 26, y + 80, 14, 14, "fill"); //right leg
 }
-function drawarrow (x1, y1, x2, y2){
-    lineWidth(3)
-    line(0, 0, 20, 20);
-    triangle(10, 40,)
+function drawstar (x, y,){
+    lineWidth(2);
+    stroke("orange")
+    line(20, 20, 60, 20);
+    
 }
 drawmogus (200, 200,);
-drawarrow (300,400);
+drawstar(20, 20);
